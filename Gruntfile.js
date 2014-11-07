@@ -8,9 +8,23 @@ module.exports = function (grunt) {
                     'build/resume.html': ['templates/index.html'],
                 }
             }
+        },
+        htmlmin: {
+            dist: {
+                options: {                                 // Target options
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    //minifyJS: true,
+                    //minifyCSS: true
+                },
+                files: {
+                    'build/resume.min.html': ['build/resume.html'],
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks("grunt-processhtml");
-    grunt.registerTask('default', ['processhtml']);
+    grunt.loadNpmTasks("grunt-contrib-htmlmin");
+    grunt.registerTask('default', ['processhtml', 'htmlmin']);
 };
