@@ -4,3 +4,11 @@
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+
+.left {
+  background-color: white;
+  padding: 1em;
+  box-shadow: 0 0 12px white; }
+
+.panel-heading {
+  cursor: pointer; }
