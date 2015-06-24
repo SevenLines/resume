@@ -30,12 +30,14 @@ a[href^="https://github.com"] {
 
 .photo-container {
   margin: 1em;
+
   margin-top: 0;
-  overflow: hidden;
-  border-radius: 1em;
-  box-shadow: 0 0 4px black;
+  text-align: center;
+
   img {
     max-width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 0 4px black;
   }
 }
 
@@ -48,7 +50,6 @@ a[href^="https://github.com"] {
   }
 
 }
-
 
 #SkypeButton_Call_MadisonTrash_1 {
   float: left;
@@ -68,5 +69,12 @@ a[href^="https://github.com"] {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 
+}
+
+.info {
+  text-align: center;
+  hr {
+    margin: 0.5em 0;
+  }
 }
 
